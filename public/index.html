@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase WebPush Demo</title>
+</head>
+<body>
+    <h1>Firebase WebPush Demo</h1>
+    <div style="display: flex; margin: 16px auto; column-gap: 8px;">
+        <button id="subscribe">通知を購読する</button>
+        <button id="unsubscribe">購読を解除する</button>
+    </div>
+    <div style="display: flex; flex-direction: column; row-gap: 8px">
+        <input type="text" id="notification-token" placeholder="トークン" value="">
+        <input type="text" id="notification-title" placeholder="通知タイトル" value="通知タイトル">
+        <textarea type="text" id="notification-body" placeholder="通知本文">通知本文</textarea>
+        <button id="send-notification">テスト通知を送信</button>
+    </div>
+    <div id="message" />
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
